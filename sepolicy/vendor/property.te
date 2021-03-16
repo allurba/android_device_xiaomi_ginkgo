@@ -6,3 +6,41 @@ type lirc_prop, property_type;
 
 # Fingerprint
 type vendor_fp_prop, property_type;
+
+type vendor_camera_prop, property_type;
+
+type sysfs_battery_supply, property_type;
+
+type sysfs_usb_supply, property_type;
+
+type vendor_audio_prop, property_type;
+
+type vendor_diag_device, property_type;
+
+type vendor_video_prop, property_type;
+
+type vendor_cnd, property_type;
+
+type vendor_hal_datafactory_hwservice, property_type;
+
+type vendor_hal_iwlan_hwservice, property_type;
+
+type vendor_ims_prop, property_type;
+
+type vendor_hal_pasrmanager_qti, property_type;
+
+type vendor_adsprpcd, property_type;
+
+type vendor_cdsprpcd, property_type;
+
+type vendor_hal_neuralnetworks_default, property_type;
+
+type vendor_ims, property_type;
+
+type vendor_qti_init_shell, property_type;
+
+type vendor_persist_audio_file, property_type;
+
+type vendor_persist_sensors_file, property_type;
+
+type vendor_thermal-engine, property_type;
