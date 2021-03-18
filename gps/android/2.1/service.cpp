@@ -24,11 +24,6 @@
 #include <hidl/LegacySupport.h>
 #include "loc_cfg.h"
 #include "loc_misc_utils.h"
-
-extern "C" {
-#include "vndfwk-detect.h"
-}
-
 #ifdef ARCH_ARM_32
 #define DEFAULT_HW_BINDER_MEM_SIZE 65536
 #endif
@@ -46,12 +41,8 @@ typedef int vendorEnhancedServiceMain(int /* argc */, char* /* argv */ []);
 
 int main() {
 
-    ALOGI("%s", __FUNCTION__);
-
-    int vendorInfo = getVendorEnhancedInfo();
-    bool vendorEnhanced = ( 1 == vendorInfo || 3 == vendorInfo );
-    setVendorEnhanced(vendorEnhanced);
-
+    ALOGI("%s", __FUNCTION__);    
+    
 #ifdef ARCH_ARM_32
     android::hardware::ProcessState::initWithMmapSize((size_t)(DEFAULT_HW_BINDER_MEM_SIZE));
 #endif
